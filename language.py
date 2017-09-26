@@ -182,20 +182,20 @@ def get_language():
     return l
 
 def show_language(l):
-    print l.phonemes['V'], l.phonemes['C']
-    if 'F' in l.syll: print l.phonemes['F'],
-    if 'L' in l.syll: print l.phonemes['L'],
-    if 'S' in l.syll: print l.phonemes['S'],
-    print l.syll
+    print(l.phonemes['V'], l.phonemes['C'])
+    if 'F' in l.syll: print(l.phonemes['F']),
+    if 'L' in l.syll: print(l.phonemes['L']),
+    if 'S' in l.syll: print(l.phonemes['S']),
+    print(l.syll)
     ps = set()
     while len(ps) < 10:
         ps.add(l.name("city"))
-    print u', '.join(ps)
+    print(u', '.join(ps))
     ps = set()
     while len(ps) < 10:
         ps.add(l.name("sea"))
-    print u', '.join(ps)
-    print "* * *"
+    print(u', '.join(ps))
+    print("* * *")
 
 if __name__ == '__main__':
     for _ in xrange(20):
