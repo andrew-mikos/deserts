@@ -14,6 +14,6 @@ $(NOVEL)/99/map.tex: $(NOVEL)/99/map.png
 		cd -; \
 	done
 
-$(NOVEL)/99/map.png:
-	python generate.py $(NOVEL)
+# $(NOVEL)/99/map.png:
+# 	python generate.py $(NOVEL)
 

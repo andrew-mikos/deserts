@@ -792,7 +792,7 @@ class MapGrid(object):
             xy = self.vxs[np.argmax(scores),:]
             #ax.axvspan(xy[0] - w, xy[0] + w, xy[1] - 0.07, xy[1] + 0.03,
                     #facecolor='none', edgecolor='red', zorder=19)
-            print("Labelling %s at %.1f" % (name, scores.max()))
+            print("Labelling ", name, scores.max())
             reglabels.append(xy)
             label = (r"\sc " + name) if tex else name
             ax.annotate(xy=xy, s=label,
